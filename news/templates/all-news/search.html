@@ -9,7 +9,7 @@
     <h2> Found 0 articles for the search term {{message}}</h2>
     {% endif %}
 
-  </div>
+  </div><hr>
 
   <div class="row">
     {% if articles %}
@@ -21,9 +21,14 @@
     <div class="row">
       <!-- displaying news articles -->
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <h2 class="text-center">{{ article.title }}</h2>
+        <h2 class="text-center" style="color: rgb(62, 207, 62)">{{ article.title }}</h2>
         <p class="text-center">{{ article.post }}</p>
       </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img src="{{ article.article_image.url }}" class="img-responsive" alt="Image" width="300px">
+      </div>
+    
+  </div><br>
 
 
 
